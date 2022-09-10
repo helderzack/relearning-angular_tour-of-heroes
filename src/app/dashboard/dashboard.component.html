@@ -1,0 +1,8 @@
+<main>
+    <h1>Top Heroes</h1>
+    <div>
+        <a *ngFor="let hero of topHeroes" href="#" 
+            (click)="onHeroClick.emit()">{{hero.name}}
+        </a>
+    </div>
+</main>

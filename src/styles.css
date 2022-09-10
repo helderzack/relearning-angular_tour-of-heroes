@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Colors:
+    header h1: #2f669a
+    hero button: #3d515c
+    a background: #e8e9e8
+    main h1: #4b4b4b
+    hero number: #3e4f61
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    background-color: #e8e9e8;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1 {
+    color: #4b4b4b;
+}

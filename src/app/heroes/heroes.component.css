@@ -1,0 +1,36 @@
+div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-left: 10px;
+    width: 250px;
+    background-color: #3e4f61;
+    border-radius: 5px;
+}
+
+div>div>div {
+    border: none;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+}
+
+a {
+    border-radius: 0px;
+    text-align: center;
+    width: 85%;
+}
+
+a:hover {
+    background-color: #d7d8d7;
+}

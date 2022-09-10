@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 150px;
+    width: 500px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+header>h1 {
+    color: #2f669a;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #3d515c;
+    color: #fff;
+}
