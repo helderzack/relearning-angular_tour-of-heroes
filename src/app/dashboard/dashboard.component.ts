@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Hero } from '../entities/Hero';
+import { Component, OnInit } from '@angular/core';
+import { Hero } from '../interfaces/hero';
+import { HeroService } from '../services/hero.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,11 +8,17 @@ import { Hero } from '../entities/Hero';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  @Input() topHeroes!: Hero[];
-  @Output() onHeroClick = new EventEmitter();
   
-  constructor() { }
+  topHeroes!: Hero[];
+
+  constructor(private heroService: HeroService) { }
+
+  getTopHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe(heroes => this.topHeroes = heroes.filter(hero => hero.id < 16));
+  }
 
   ngOnInit(): void {
+    this.getTopHeroes();
   }
 }

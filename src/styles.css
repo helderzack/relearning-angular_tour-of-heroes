@@ -17,16 +17,27 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
+button {
     background-color: #e8e9e8;
     color: black;
+    font-size: 1rem;
+    height: 40px;
     padding: 10px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     color: #4b4b4b;
+}
+
+button:hover {
+    cursor: pointer;
 }

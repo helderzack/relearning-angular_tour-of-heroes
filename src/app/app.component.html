@@ -1,9 +1,3 @@
-<app-page-header
-    [currentComponent]="currentComponent"
-    (onDashboardClick)="showDashboard()"
-    (onHeroesClick)="showHeroes()"
-    (onHeroClick)="showHeroDetails()">
-</app-page-header>
-<app-dashboard *ngIf="currentComponent === 'dashboard'" [topHeroes]="topHeroes"></app-dashboard>
-<app-hero-details *ngIf="currentComponent === 'hero details'" [hero]="heroes[0]"></app-hero-details>
-<app-heroes *ngIf="currentComponent === 'heroes'" [heroes]="heroes"></app-heroes>
+<app-page-header></app-page-header>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

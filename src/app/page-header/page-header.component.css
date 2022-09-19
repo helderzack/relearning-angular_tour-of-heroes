@@ -18,6 +18,17 @@ header>h1 {
     font-weight: bold;
 }
 
+a {
+    background-color: #e8e9e8;
+    font-size: 1rem;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
 a:hover {
     background-color: #3d515c;
     color: #fff;

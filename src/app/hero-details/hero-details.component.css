@@ -6,7 +6,7 @@ div:first-child {
     gap: 10px;
 }
 
-h1 {
+label {
     font-size: 1rem;
     color: #4b4b4b;
 }
@@ -18,11 +18,15 @@ div>div {
     gap: 10px
 }
 
-a {
+button {
     width: 25%;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
 }
 
-a:hover {
+button:hover {
     background-color: #3d515c;
     color: #fff;
 }

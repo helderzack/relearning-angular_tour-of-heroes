@@ -15,6 +15,13 @@ main>div {
 a {
     background-color: #3d515c;
     color: white;
+    font-size: 1rem;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
 a:hover {

@@ -1,9 +1,9 @@
 <div>
-    <h1>{{hero.name.toUpperCase() + ' Details'}}</h1>
+    <label for="name">{{hero.name | uppercase}} Details</label>
     <span>id: {{hero.id}}</span>
     <div>
         <strong>Hero name:</strong>
-        <input [value]="hero.name">
+        <input id="name" placeholder="name" [(ngModel)]="hero.name">
     </div>
-    <a href="#">Back</a>
+    <button (click)="goBack()">Back</button>
 </div>
